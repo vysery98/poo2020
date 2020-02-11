@@ -48,28 +48,30 @@ public class EstadoEstudiante {
         this.bim_dos = bim_dos;
     }
 
-    public double calcular_total(double nota1, double nota2) {
+    public double calcular_total(double bim_uno, double bim_dos) {
         double total;
 
-        total = nota1 + nota2;
+        total = bim_uno + bim_dos;
 
         return total;
     }
 
-    public String reportar(String name, String materia, double total) {
-        String salida = "";
+    public String aprobar_reprobar(double total){
         String estado = "";
-
-        if (total >= 28 && total <= 40) {
+        if(total >= 27.5 && total <= 40){
             estado = "APROBADO";
-        } else {
-            estado = "REPROBADO [SUPLETORIO]";
+        } else if(total >= 0 && total < 27.5){
+            estado = "REPROBADO[SUPLETORIO]";
         }
+        return estado;
+    }
+
+    public String reportar(String name, String materia, double total, String estado) {
+        String salida = "";
 
         salida = ("______________________________________________________________________\nUniversidad Técnica Parti" +
                 "cular de Loja\nEstudiante: " + name.toUpperCase() + "\nAsignatura: " + materia.toUpperCase() + "\nEs" +
-                "tado: " + estado.toUpperCase() + " con calificación " + total + "\n_________________________________" +
-                "_____________________________________");
+                "tado: " + estado + "\n______________________________________________________________________");
 
         return salida;
     }

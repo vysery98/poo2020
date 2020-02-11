@@ -16,7 +16,7 @@ public class EjecutaEstadoEstudiante {
         double total;
 
         // Lectura de datos
-        System.out.print("Nombre del estudiante: ");
+        System.out.print("Nombres completos del estudiante: ");
         nombre = scan.nextLine();
         System.out.print("Asignatura: ");
         asignatura = scan.nextLine();
@@ -27,9 +27,10 @@ public class EjecutaEstadoEstudiante {
 
         // Creación de objeto con inicialización de variables
         EstadoEstudiante estado = new EstadoEstudiante(nombre, asignatura, calificacion_bim1, calificacion_bim2);
-        total = estado.calcular_total(calificacion_bim1, calificacion_bim2);
 
         // Salida
-        System.out.println(estado.reportar(nombre, asignatura, total));
+        System.out.println(estado.reportar(nombre, asignatura, estado.calcular_total(calificacion_bim1,
+                calificacion_bim2), estado.aprobar_reprobar(estado.calcular_total(calificacion_bim1,
+                calificacion_bim2))));
     }
 }
