@@ -6,7 +6,7 @@ public class Estudiante {
     private String nombre;
     private int edad;
     private String sexo;
-    private float altura;
+    private double altura;
     private String raza;
     private String nacionalidad;
     private String residencia;
@@ -70,7 +70,7 @@ public class Estudiante {
      * @return this.altura
      */
 
-    public float obtener_altura() {
+    public double obtener_altura() {
         return this.altura;
     }
 
@@ -156,7 +156,7 @@ public class Estudiante {
      *
      * @param altura
      */
-    public void actualizar_altura(float altura) {
+    public void actualizar_altura(double altura) {
         this.altura = altura;
     }
 

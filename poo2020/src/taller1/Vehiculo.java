@@ -45,6 +45,16 @@ public class Vehiculo {
      * @return this.color
      */
 
+    public String obtener_color() {
+        return this.color;
+    }
+
+    /**
+     * Método para obtener el valor de la variable modelo.
+     *
+     * @return this.modelo
+     */
+
     public String obtener_modelo() {
         return this.modelo;
     }
