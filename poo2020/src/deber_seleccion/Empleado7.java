@@ -5,6 +5,7 @@ public class Empleado7 {
     private String nombre;
     private int hTrabajadas;
     private double vHora;
+    private double sueldo;
 
     /**
      * Método para establecer el valor de la variable nombre
@@ -40,9 +41,8 @@ public class Empleado7 {
      * @return sueldo
      */
     public double calcularSueldo() {
-        double sueldo;
         if (hTrabajadas <= 40) {
-            sueldo = hTrabajadas * vHora;
+            sueldo = (40 * vHora) + ((hTrabajadas - 40) * (vHora * 2));
         } else {
             sueldo = (40 * vHora) + (10 * vHora * 2) + ((hTrabajadas - 50) * (vHora * 3));
         }
