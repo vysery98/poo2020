@@ -19,7 +19,6 @@ public class EstadoEstudiante {
         return estudiante;
     }
 
-
     public void setEstudiante(String estudiante) {
         this.estudiante = estudiante;
     }
@@ -56,11 +55,11 @@ public class EstadoEstudiante {
         return total;
     }
 
-    public String aprobar_reprobar(double total){
+    public String aprobar_reprobar(double total) {
         String estado = "";
-        if(total >= 27.5 && total <= 40){
+        if (total >= 27.5 && total <= 40) {
             estado = "APROBADO";
-        } else if(total >= 0 && total < 27.5){
+        } else if (total >= 0 && total < 27.5) {
             estado = "REPROBADO[SUPLETORIO]";
         }
         return estado;
