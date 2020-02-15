@@ -8,13 +8,15 @@ package taller_repeticion;
  */
 public class Cajero {
     private int opcion;
+    private String nombre;
     private double deposito;
     private double retiro;
     private double saldo;
     private String reporte;
 
     /**
-     * Metodo para obtener la opcion
+     * Método para llamar al valor almacenado en la variable opcion
+     *
      * @return opcion
      */
     public int getOpcion() {
@@ -22,7 +24,26 @@ public class Cajero {
     }
 
     /**
-     * Metodo para actualizar la opcion
+     * Método para asignar un valor a la variable nombre
+     *
+     * @param nombre
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * Método para llamar al valor almacenado en la variable nombre
+     *
+     * @return nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * Método para asignar un valor a la variable opcion
+     *
      * @param opcion
      */
     public void setOpcion(int opcion) {
@@ -30,7 +51,8 @@ public class Cajero {
     }
 
     /**
-     * Metodo para obtener el deposito
+     * Método para llamar al valor almacenador en la variable deposito
+     *
      * @return deposito
      */
     public double getDeposito() {
@@ -38,15 +60,18 @@ public class Cajero {
     }
 
     /**
-     * Metodo para actualizar el deposito
+     * Método para asignar un valor a la variable deposito
+     *
      * @param deposito
      */
     public void setDeposito(double deposito) {
         this.deposito = deposito;
+        saldo = saldo + deposito;
     }
 
     /**
-     * Metodo para obtener el retiro
+     * Método para llamar al valor almacenado en la variable retiro
+     *
      * @return retiro
      */
     public double getRetiro() {
@@ -54,15 +79,18 @@ public class Cajero {
     }
 
     /**
-     * Metodo para actualizar el retiro
+     * Método para establecer un valor en la variable retiro
+     *
      * @param retiro
      */
     public void setRetiro(double retiro) {
         this.retiro = retiro;
+        saldo = saldo - retiro;
     }
 
     /**
-     * Metodo para obtener el saldo
+     * Método llamar al valor almacenado en la variable saldo
+     *
      * @return saldo
      */
     public double getSaldo() {
@@ -70,7 +98,8 @@ public class Cajero {
     }
 
     /**
-     * Metodo para actualizar el saldo
+     * Método para asignar un valor a la variable saldo
+     *
      * @param saldo
      */
     public void setSaldo(double saldo) {
@@ -78,25 +107,33 @@ public class Cajero {
     }
 
     /**
-     * Metodo para obtener el reporte que se mostrara al usuario
+     * Método para llamar al valor almacenado en la variable reporte
+     *
      * @return reporte
      */
     public String getReporte() {
-        String reporte;
-        switch (getOpcion()) {
-            case 1:
-                reporte = "Se realizo un deposito de: " + getDeposito();
-                break;
-            case 2:
-                reporte = "Se realizo un retiro de: " + getRetiro();
-                break;
-            case 3:
-                reporte = "Su saldo es de: " + saldo;
-                break;
-            default:
-                reporte = "Opcion invalida";
-                break;
-        }
         return reporte;
     }
+
+    /**
+     * Método para generar un reporte según la opción seleccionada
+     * por el usuario
+     */
+    public void setReporte() {
+        switch (getOpcion()) {
+            case 1:
+                reporte = "Se realizó un depósito de: $" + getDeposito();
+                break;
+            case 2:
+                reporte = "Se realizó un retiro de: $" + getRetiro();
+                break;
+            case 3:
+                reporte = "Su saldo es de: $" + saldo;
+                break;
+            default:
+                reporte = "Opcion invalida.";
+                break;
+        }
+    }
 }
+
