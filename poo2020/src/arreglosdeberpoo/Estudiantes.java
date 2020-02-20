@@ -96,8 +96,8 @@ public class Estudiantes {
     public void presentar() {
         salida = "";
         for (int i = 0; i < nombre.length; i++) {
-            salida = String.format("%sNombre: %s\nEdad: %d\nUniversidad: %s\nCelular: %s\n\n", salida, nombre[i],
-                    edad[i], universidad[i], celular[i]);
+            salida = String.format("%s-\tNombre: %s\n-\tEdad: %d\n-\tUniversidad: %s\n-\tCelular: %s\n\n", salida,
+                    nombre[i], edad[i], universidad[i], celular[i]);
         }
     }
 }
