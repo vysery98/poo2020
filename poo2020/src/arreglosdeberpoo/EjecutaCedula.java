@@ -18,18 +18,22 @@ public class EjecutaCedula {
             System.out.print("Ingrese número de cédula: ");
             cedula = scan.nextLine();
             valid = true;
-            if(cedula.length() != 10){
+            if (cedula.length() != 10) {
                 System.out.println("Número de cédula inválido, recuerde que un número de cédula contiene 10 dígitos.");
                 valid = false;
             }
-        } while (valid == false);
+        } while (!valid);
 
         // Creación e inicialización de objeto
         Cedula id = new Cedula();
 
         // Establecer valores en objeto
         id.setId(cedula);
+        id.setArrayId();
+        id.calcularValidez();
+        id.validarPresentarSalida();
 
-
+        // Salida
+        System.out.println(id.getPresentarSalida());
     }
 }
