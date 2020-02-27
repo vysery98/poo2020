@@ -5,7 +5,7 @@ public class Matriz {
     // Declaración de datos
     private int[][] matrizA;
     private int[][] matrizB;
-    private int[][] matrizC = new int[3][3];
+    private int[][] matrizC = new int[matrizA.length][matrizA[0].length];
 
     /**
      * Método para llamar a los datos contenidos en matrizA
