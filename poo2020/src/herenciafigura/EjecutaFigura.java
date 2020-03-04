@@ -32,7 +32,7 @@ public class EjecutaFigura {
                     cuad.calcularAreaCuad();
 
                     // Salida
-                    System.out.printf("\nVolumen: %s\nÁrea = %.2f\n", cuad.nombre.toUpperCase(), cuad.getAreaCuad());
+                    System.out.printf("\nFigura: %s\nÁrea = %.2f\n", cuad.nombre.toUpperCase(), cuad.getAreaCuad());
                     break;
 
                 case 2:
@@ -47,7 +47,7 @@ public class EjecutaFigura {
                     triang.calcularAreaTria();
 
                     // Salida
-                    System.out.printf("\nVolumen: %s\nÁrea = %.2f\n", triang.nombre.toUpperCase(), triang.getAreaTria());
+                    System.out.printf("\nFigura: %s\nÁrea = %.2f\n", triang.nombre.toUpperCase(), triang.getAreaTria());
                     break;
 
                 case 3:
@@ -62,7 +62,7 @@ public class EjecutaFigura {
                     rect.calcularAreaRecta();
 
                     // Salida
-                    System.out.printf("\nVolumen: %s\nÁrea = %.2f\n", rect.nombre.toUpperCase(), rect.getAreaRecta());
+                    System.out.printf("\nFigura: %s\nÁrea = %.2f\n", rect.nombre.toUpperCase(), rect.getAreaRecta());
                     break;
 
                 case 4:
@@ -75,7 +75,7 @@ public class EjecutaFigura {
                     circ.calcularAreaCirc();
 
                     // Salida
-                    System.out.printf("\nVolumen: %s\nÁrea = %.2f\n", circ.nombre.toUpperCase(), circ.getAreaCirc());
+                    System.out.printf("\nFigura: %s\nÁrea = %.2f\n", circ.nombre.toUpperCase(), circ.getAreaCirc());
                     break;
 
                 case 5:

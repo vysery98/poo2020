@@ -15,7 +15,7 @@ public class EjecutaInversionista {
                 "______________________________________________________________________________________\n";
 
         double capital, tasa, sumaAux = 0;
-        int plazo, opt, puesto, inversiones = 1;
+        int plazo, opt, tipo, inversiones = 1;
         boolean salida = true, salida2 = true, salida3 = true;
 
         do {
@@ -27,11 +27,11 @@ public class EjecutaInversionista {
             System.out.print("Número de Cuenta: ");
             nroCuenta = scan.nextLine();
             System.out.print("Tipo de Cuenta:\n1. Cuenta de Ahorro\n2. Cuenta Maestra\n3. Pagaré\nOpción = ");
-            puesto = scan.nextInt();
+            tipo = scan.nextInt();
             // Limpieza del Buffer
             scan.nextLine();
             do {
-                switch (puesto) {
+                switch (tipo) {
                     case 1:
                         // Lectura de datos solicitados
                         System.out.print("\nCUENTA DE AHORRO\nIngrese el valor del capital = $");

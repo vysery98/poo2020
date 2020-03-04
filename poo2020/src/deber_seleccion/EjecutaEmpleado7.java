@@ -31,7 +31,7 @@ public class EjecutaEmpleado7 {
         empleado.setvHora(vHora);
 
         // Salida
-        System.out.println("\nEmpleado: " + empleado.getNombre().toUpperCase() + "\nSueldo = $" +
+        System.out.println("\nEmpleado12: " + empleado.getNombre().toUpperCase() + "\nSueldo = $" +
                 empleado.calcularSueldo());
     }
 }

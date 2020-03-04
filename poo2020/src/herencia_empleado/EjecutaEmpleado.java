@@ -17,7 +17,7 @@ public class EjecutaEmpleado {
 
         // Menú a presentarse en el bucle
         String menu = "Ingrese la opción que desee:\n1. Realizar el Cálculo de un empleado cuyo Sueldo es por Horas:" +
-                "\n2. Realizar el Cálculo de un empleado cuyo Sueldo es fijo (Empleado Asalariado):\n3. Salir.\nOpció" +
+                "\n2. Realizar el Cálculo de un empleado cuyo Sueldo es fijo (Empleado12 Asalariado):\n3. Salir.\nOpció" +
                 "n = ";
 
         do {

@@ -1,13 +1,13 @@
 package herencia_empleado;
 
 /**
- * Clase que hereda de la clase Empleado
- * Contendrá todos los atributos y métodos definidos en Empleado.
+ * Clase que hereda de la clase Empleado12
+ * Contendrá todos los atributos y métodos definidos en Empleado12.
  */
 public class EmpleadoPorHora extends Empleado {
 
     /**
-     * Constructor para la clase Empleado por Hora
+     * Constructor para la clase Empleado12 por Hora
      *
      * @param nombre
      * @param cargo

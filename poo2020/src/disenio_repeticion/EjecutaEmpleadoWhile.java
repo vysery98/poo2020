@@ -39,7 +39,7 @@ public class EjecutaEmpleadoWhile {
             empleado.calcularSueldo();
 
             // Salida
-            System.out.println("Empleado: " + empleado.getNombre());
+            System.out.println("Empleado12: " + empleado.getNombre());
             System.out.println("Sueldo: " + empleado.getSueldo());
 
             // Proceso para determinar si se repite el ciclo

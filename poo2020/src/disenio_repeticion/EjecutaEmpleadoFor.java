@@ -41,7 +41,7 @@ public class EjecutaEmpleadoFor {
             empleado.calcularSueldo();
 
             // Concatenación de datos
-            salida = String.format(("%s\nEmpleado " + i + ": " + empleado.getNombre() + "\nSueldo: " + empleado.getSueldo() +
+            salida = String.format(("%s\nEmpleado12 " + i + ": " + empleado.getNombre() + "\nSueldo: " + empleado.getSueldo() +
                     "\n"), salida);
         }
 
