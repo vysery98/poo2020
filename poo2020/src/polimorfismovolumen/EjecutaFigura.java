@@ -1,8 +1,8 @@
-package herenciavolumen;
+package polimorfismovolumen;
 
 import java.util.Scanner;
 
-public class EjecutaVolumen {
+public class EjecutaFigura {
 
     public static void main(String[] args) {
 
@@ -10,73 +10,79 @@ public class EjecutaVolumen {
         Scanner scan = new Scanner(System.in);
 
         // Declaración de variables
-        double radio, altura, arista;
         int opt;
         boolean salida = true;
 
         // Proceso para presentar el menú y calcular
         do {
-            System.out.print("Ingrese un número según la opción que desee:\n1. Figura del Cubo:\n2. Figura del Cili" +
-                    "ndro\n3. Volúmen del Cono\n4. Volúmen de la Esfera\n5. Salir\nOpción = ");
+            System.out.print("Ingrese un número según la opción que desee calcular el volúmen:\n1. Cubo:\n2. Cilindro" +
+                    "\n3. Cono\n4. Esfera\n5. Salir\nOpción = ");
             opt = scan.nextInt();
 
             switch (opt) {
 
                 case 1:
+                    // Creación e inicialización de objeto
+                    Cubo a = new Cubo();
+
                     // Lectura de datos solicitados
                     System.out.print("\nVOLÚMEN DEL CUBO\nIngrese el valor de la arista: ");
-                    arista = scan.nextDouble();
+                    a.setAristaCubo(scan.nextDouble());
 
-                    // Creación e inicialización de objeto
-                    Cubo cub = new Cubo("Cubo", arista);
-                    cub.calcularVolumenCubo();
+                    a.setNombre("cubo");
+                    a.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", cub.nombre.toUpperCase(), cub.getVolumenCubo());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", a.nombre.toUpperCase(), a.getVolumen());
                     break;
 
                 case 2:
+                    // Creación e inicialización de objeto
+                    Cilindro b = new Cilindro();
+
                     // Lectura de datos solicitados
                     System.out.print("\nVOLÚMEN DEL CILINDRO\nIngrese el valor de la altura: ");
-                    altura = scan.nextDouble();
+                    b.setAlturaCil(scan.nextDouble());
                     System.out.print("Ingrese el valor del radio: ");
-                    radio = scan.nextDouble();
+                    b.setRadioCubo(scan.nextDouble());
 
-                    // Creación e inicialización de objeto
-                    Cilindro cil = new Cilindro("Cilindro", radio, altura);
-                    cil.calcularVolumenCil();
+                    b.setNombre("cilindo");
+                    b.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", cil.nombre.toUpperCase(), cil.getVolumenCil());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", b.nombre.toUpperCase(), b.getVolumen());
                     break;
 
                 case 3:
+                    // Creación e inicialización de objeto
+                    Cono c = new Cono();
+
                     // Lectura de datos solicitados
                     System.out.print("\nVOLÚMEN DEL CONO\nIngrese el valor de la altura: ");
-                    altura = scan.nextDouble();
+                    c.setAlturaCono(scan.nextDouble());
                     System.out.print("Ingrese el valor del radio: ");
-                    radio = scan.nextDouble();
+                    c.setRadioCono(scan.nextDouble());
 
-                    // Creación e inicialización de objeto
-                    Cono con = new Cono("Cono", radio, altura);
-                    con.calcularVolumenCono();
+                    c.setNombre("cono");
+                    c.calcularVolumen();
 
                     // Salida
-
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", con.nombre.toUpperCase(), con.getVolumenCono());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", c.nombre.toUpperCase(), c.getVolumen());
                     break;
 
                 case 4:
+                    // Creación e inicialización de objeto
+                    Esfera d = new Esfera();
+
                     // Lectura de datos solicitados
                     System.out.print("\nVOLÚMEN DE LA ESFERA\nIngrese el valor del radio: ");
-                    radio = scan.nextDouble();
+                    d.setRadioEsf(scan.nextDouble());
 
-                    // Creación e inicialización de objeto
-                    Esfera esf = new Esfera("Esfera", radio);
-                    esf.calcularVolumenEsf();
+                    d.setNombre("esfera");
+                    d.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", esf.nombre.toUpperCase(), esf.getVolumenEsf());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", d.nombre.toUpperCase(), d.getVolumen());
                     break;
 
                 case 5:
