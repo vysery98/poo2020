@@ -20,7 +20,7 @@ public class Cilindro extends Figura {
      *
      * @param radioCil
      */
-    public void setRadioCubo(double radioCil) {
+    public void setRadioCil(double radioCil) {
         this.radioCil = radioCil;
     }
 

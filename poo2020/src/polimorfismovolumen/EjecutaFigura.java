@@ -44,7 +44,7 @@ public class EjecutaFigura {
                     System.out.print("\nVOLÚMEN DEL CILINDRO\nIngrese el valor de la altura: ");
                     b.setAlturaCil(scan.nextDouble());
                     System.out.print("Ingrese el valor del radio: ");
-                    b.setRadioCubo(scan.nextDouble());
+                    b.setRadioCil(scan.nextDouble());
 
                     b.setNombre("cilindo");
                     b.calcularVolumen();
