@@ -129,7 +129,7 @@ public abstract class ClienteDeudor {
     }
 
     /**
-     * Método abstracto para el cálculo del interés
+     * Método abstracto para el cálculo del interés3
      */
     public abstract void calcularInteresPaga();
 

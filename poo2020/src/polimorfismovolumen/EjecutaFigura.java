@@ -33,7 +33,7 @@ public class EjecutaFigura {
                     a.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", a.nombre.toUpperCase(), a.getVolumen());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", a.getNombre().toUpperCase(), a.getVolumen());
                     break;
 
                 case 2:
@@ -50,7 +50,7 @@ public class EjecutaFigura {
                     b.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", b.nombre.toUpperCase(), b.getVolumen());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", b.getNombre().toUpperCase(), b.getVolumen());
                     break;
 
                 case 3:
@@ -67,7 +67,7 @@ public class EjecutaFigura {
                     c.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", c.nombre.toUpperCase(), c.getVolumen());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", c.getNombre().toUpperCase(), c.getVolumen());
                     break;
 
                 case 4:
@@ -82,7 +82,7 @@ public class EjecutaFigura {
                     d.calcularVolumen();
 
                     // Salida
-                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", d.nombre.toUpperCase(), d.getVolumen());
+                    System.out.printf("\nFigura: %s\nVolúmen = %.2f\n", d.getNombre().toUpperCase(), d.getVolumen());
                     break;
 
                 case 5:
